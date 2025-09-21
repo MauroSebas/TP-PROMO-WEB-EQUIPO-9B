@@ -1,0 +1,15 @@
+﻿.btn-mi-color {
+    background-color: #5d0ec0 !important;
+    border-color: #5d0ec0 !important;
+    color: #fff !important;
+    width: 200px;
+    text-align: center;
+}
+
+    .btn-mi-color:hover,
+    .btn-mi-color:focus,
+    .btn-mi-color:active {
+        background-color: #4a0b90 !important;
+        border-color: #4a0b90 !important;
+        box-shadow: none !important;
+    }
