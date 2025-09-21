@@ -124,10 +124,6 @@
       <Project>{93be8623-532c-4211-8bd6-008f6ba3233a}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
-    <ProjectReference Include="Datos\Datos.csproj">
-      <Project>{58a32b10-ab8f-4783-996d-4f77cf8e566f}</Project>
-      <Name>Datos</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
