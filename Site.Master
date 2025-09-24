@@ -14,7 +14,7 @@
     </asp:ContentPlaceHolder>
 </head>
 
-<body>
+<body style="background-color: #f8f8f8">
     <form id="form1" runat="server">
         <div class="w-100">
             <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -58,83 +58,84 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <footer class="pt-4" style="border-top: 1px solid #ccc;">
-    <div class="container">
-        <!-- Sección superior:-->
-        <div class="row text-center text-md-start mb-4">
-            <div class="col-md-3 mb-3 mb-md-0">
-                <img src="assets/logo/logo.png" alt="VoucherApp Logo" style="max-width: 150px;">
-            </div>
-            <div class="col-md-3">
-                <h6>Atención al cliente</h6>
-                <p class="mb-1">0800 112 0318</p>
-                <p class="mb-1">0810 919 3128</p>
-                <p class="mb-0 text-muted">
-                    LU-VI 09:00 - 18:00<br>
-                    SA 09:00 - 13:00
-                </p>
-            </div>
-            <div class="col-md-3">
-                <h6>Cobranza de créditos</h6>
-                <p class="mb-0 text-muted">cobranzas@voucherapp.com</p>
-            </div>
-            <div class="col-md-3">
-                <h6>Venta telefónica</h6>
-                <p class="mb-1">0810 313 8100</p>
-                <p class="mb-0 text-muted">
-                    LU-VI 08:00 - 20:00<br>
-                    SA-DO-Feriados 09:00 - 21:00
-                </p>
-            </div>
-        </div>
+        <footer class="pt-4" style="border-top: 1px solid #ccc; background-color: #ffffff;">
+            <div class="container">
+                <!-- Sección superior:-->
+                <div class="row text-center text-md-start mb-4">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <img src="assets/logo/logo.png" alt="VoucherApp Logo" style="max-width: 150px;">
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Atención al cliente</h6>
+                        <p class="mb-1">0800 112 0318</p>
+                        <p class="mb-1">0810 919 3128</p>
+                        <p class="mb-0 text-muted">
+                            LU-VI 09:00 - 18:00<br>
+                            SA 09:00 - 13:00
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Cobranza de créditos</h6>
+                        <p class="mb-0 text-muted">cobranzas@voucherapp.com</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Venta telefónica</h6>
+                        <p class="mb-1">0810 313 8100</p>
+                        <p class="mb-0 text-muted">
+                            LU-VI 08:00 - 20:00<br>
+                            SA-DO-Feriados 09:00 - 21:00
+                        </p>
+                    </div>
+                </div>
 
-        <hr class="border-secondary">
+                <hr class="border-secondary">
 
-        <!-- Sección inferior -->
-        <div class="row text-center text-md-start mb-4">
-         
-            <div class="col-12 col-md-3 mb-3 mb-md-0">
-                <h6>Recibí ofertas y promociones</h6>
-                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control mb-2" placeholder="Ingresá tu email"></asp:TextBox>
-                <asp:Button ID="btnSubscribe" runat="server" CssClass="btn btn-primary btn-mi-color w-100" Text="Suscribirme" />
-            </div>
+                <!-- Sección inferior -->
+                <div class="row text-center text-md-start mb-4">
 
-            
-            <div class="col-6 col-md-3 mb-3 mb-md-0">
-                <ul class="list-unstyled text-muted">
-                    <li>Comprar online</li>
-                    <li>Servicio técnico</li>
-                    <li>Información legal</li>
-                    <li>Botón de arrepentimiento</li>
-                </ul>
-            </div>
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
+                        <h6>Recibí ofertas y promociones</h6>
+                        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control mb-2" placeholder="Ingresá tu email"></asp:TextBox>
+                        <asp:Button ID="btnSubscribe" runat="server" CssClass="btn btn-primary btn-mi-color w-100" Text="Suscribirme" />
+                    </div>
 
-           
-            <div class="col-6 col-md-3 mb-3 mb-md-0">
-                <ul class="list-unstyled text-muted">
-                    <li>Protección de Usuarios Financieros</li>
-                    <li>Promociones Bancarias</li>
-                    <li>Frávega Créditos</li>
-                    <li>Pagá Online</li>
-                </ul>
-            </div>
 
-           
-            <div class="col-12 col-md-3 mb-3 mb-md-0">
-                <ul class="list-unstyled text-muted">
-                    <li>Recomendados</li>
-                    <li>Smart TV</li>
-                    <li>Celulares</li>
-                    <li>Aire acondicionado</li>
-                </ul>
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <ul class="list-unstyled text-muted">
+                            <li>Comprar online</li>
+                            <li>Servicio técnico</li>
+                            <li>Información legal</li>
+                            <li>Botón de arrepentimiento</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <ul class="list-unstyled text-muted">
+                            <li>Protección de Usuarios Financieros</li>
+                            <li>Promociones Bancarias</li>
+                            <li>Frávega Créditos</li>
+                            <li>Pagá Online</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
+                        <ul class="list-unstyled text-muted">
+                            <li>Recomendados</li>
+                            <li>Smart TV</li>
+                            <li>Celulares</li>
+                            <li>Aire acondicionado</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</footer>
+        </footer>
 
 
     </form>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
