@@ -24,11 +24,7 @@ namespace TPWebForms_equipo9B
 
         protected void SeleccionarArticulo(object sender, CommandEventArgs e)
         {
-            int idArticulo = Convert.ToInt32(e.CommandArgument);
-            // Guardás el artículo seleccionado en Session o ViewState
-            Session["ArticuloSeleccionado"] = idArticulo;
-            // Redireccionás a la página de registro del cliente
-            Response.Redirect("RegistroCliente.aspx");
+            
         }
     }
 }

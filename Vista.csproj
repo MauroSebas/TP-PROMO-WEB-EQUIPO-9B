@@ -76,6 +76,7 @@
     <Content Include="assets\logo\Logotipo.png" />
     <Content Include="assets\logo\Nombre_Logo.png" />
     <Content Include="Content\CSS\style.css" />
+    <Content Include="Content\CSS\Vouncher.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="SeleccionArticulo.aspx" />

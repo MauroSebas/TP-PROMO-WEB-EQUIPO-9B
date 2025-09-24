@@ -1,7 +1,35 @@
-﻿.btn-mi-color {
-    background-color: #5d0ec0 !important;
-    border-color: #5d0ec0 !important;
-    color: #ffffff !important;
+﻿/*Variables para las paletas de colores*/
+:root {
+    --violeta-principal: #5d0ec0; /* Botones, títulos, líneas */
+    --violeta-hover: #4a0b90; /* Hover botones */
+    --gris-claro: #f5f5f5; /* Fondos claros */
+    --gris-texto: #6c757d; /* Texto secundario */
+    --blanco: #ffffff; /* Texto claro */
+
+    /* Paleta complementaria */
+    --color1: #48345d; /* Violeta oscuro, textos secundarios */
+    --color2: #733f68; /* Violeta medio, detalles */
+    --color3: #b3557e; /* Rosa apagado, badges o hover */
+    --color4: #f17993; /* Rosa vivo, acentos */
+    --color5: #f4aa97; /* Salmón claro, fondos suaves */
+}
+
+.titulo-violeta {
+    color: var(--violeta-principal) !important;
+    text-transform: uppercase;
+}
+
+.linea-violeta {
+    border-color: var(--violeta-principal) !important;
+    border-width: 2px !important;
+    margin-bottom: 4.0rem;
+}
+
+
+.btn-mi-color {
+    background-color: var(--violeta-principal) !important;
+    border-color: var(--violeta-principal) !important;
+    color: var(--blanco) !important;
     width: 200px;
     text-align: center;
 }
@@ -9,18 +37,17 @@
     .btn-mi-color:hover,
     .btn-mi-color:focus,
     .btn-mi-color:active {
-        background-color: #4a0b90 !important;
-        border-color: #4a0b90 !important;
+        background-color: var(--violeta-hover) !important;
+        border-color: var(--violeta-hover) !important;
         box-shadow: none !important;
     }
 
-    /*Hover para las card de los articulos*/
+ /*Hover para las card */
 .hover-scale:hover {
     transform: translateY(-5px) scale(1.02);
     transition: all 0.3s ease;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3) !important;
 }
-
 
 /* Banner */
 #promoCarousel img {
@@ -36,3 +63,8 @@
         object-position: center top;
     }
 }
+
+
+
+
+

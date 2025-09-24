@@ -13,5 +13,10 @@ namespace TPWebForms_equipo9B
         {
 
         }
+
+        protected void btnIntercambiar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/SeleccionArticulo.aspx");
+        }
     }
 }
