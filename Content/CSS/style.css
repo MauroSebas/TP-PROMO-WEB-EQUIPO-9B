@@ -1,7 +1,7 @@
 ﻿.btn-mi-color {
     background-color: #5d0ec0 !important;
     border-color: #5d0ec0 !important;
-    color: #fff !important;
+    color: #ffffff !important;
     width: 200px;
     text-align: center;
 }
@@ -13,3 +13,26 @@
         border-color: #4a0b90 !important;
         box-shadow: none !important;
     }
+
+    /*Hover para las card de los articulos*/
+.hover-scale:hover {
+    transform: translateY(-5px) scale(1.02);
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3) !important;
+}
+
+
+/* Banner */
+#promoCarousel img {
+    width: 100%;
+    display: block;
+}
+
+/* Para el celu */
+@media (max-width: 768px) {
+    #promoCarousel img {
+        height: 250px; 
+        object-fit: cover;         
+        object-position: center top;
+    }
+}
