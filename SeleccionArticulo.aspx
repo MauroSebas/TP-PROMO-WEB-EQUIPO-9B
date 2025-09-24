@@ -22,7 +22,7 @@
 
                                 <asp:Button ID="btnSeleccionar" runat="server" Text="Canjear ahora"
                                     CommandArgument='<%# Eval("id") %>' OnCommand="SeleccionarArticulo"
-                                    CssClass="btn btn-primary btn-mi-color mt-2" />
+                                    CssClass="btn input-mi-color mt-2" />
                             </div>
                         </div>
                     </div>
