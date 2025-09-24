@@ -67,6 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\img\banner\desktop\Banner2.jpg" />
+    <Content Include="assets\img\banner\desktop\Banner3.jpg" />
+    <Content Include="assets\img\banner\desktop\BannerPrincipal.png" />
+    <Content Include="assets\img\banner\movile\Bannermovile.png" />
+    <Content Include="assets\img\banner\movile\Bannermovile1.png" />
+    <Content Include="assets\logo\Logo.png" />
+    <Content Include="assets\logo\Logotipo.png" />
+    <Content Include="assets\logo\Nombre_Logo.png" />
     <Content Include="Content\CSS\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -112,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
