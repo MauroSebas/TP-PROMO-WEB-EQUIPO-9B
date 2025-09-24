@@ -5,7 +5,6 @@
     --gris-claro: #f5f5f5; /* Fondos claros */
     --gris-texto: #6c757d; /* Texto secundario */
     --blanco: #ffffff; /* Texto claro */
-
     /* Paleta complementaria */
     --color1: #48345d; /* Violeta oscuro, textos secundarios */
     --color2: #733f68; /* Violeta medio, detalles */
@@ -15,8 +14,9 @@
 }
 
 .titulo-violeta {
-    color: var(--violeta-principal) !important;
+    color: var(--blanco);
     text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 
 .linea-violeta {
@@ -26,23 +26,28 @@
 }
 
 
-.btn-mi-color {
+.input-mi-color {
     background-color: var(--violeta-principal) !important;
-    border-color: var(--violeta-principal) !important;
     color: var(--blanco) !important;
     width: 200px;
     text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 2.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-    .btn-mi-color:hover,
-    .btn-mi-color:focus,
-    .btn-mi-color:active {
+    .input-mi-color:hover,
+    .input-mi-color:focus,
+    .input-mi-color:active {
         background-color: var(--violeta-hover) !important;
         border-color: var(--violeta-hover) !important;
         box-shadow: none !important;
     }
 
- /*Hover para las card */
+/*Hover para las card */
 .hover-scale:hover {
     transform: translateY(-5px) scale(1.02);
     transition: all 0.3s ease;
@@ -58,13 +63,22 @@
 /* Para el celu */
 @media (max-width: 768px) {
     #promoCarousel img {
-        height: 250px; 
-        object-fit: cover;         
+        height: 250px;
+        object-fit: cover;
         object-position: center top;
     }
 }
 
 
-
-
-
+.textbox-app {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    color: var(--gris-texto);
+    background-color: var(--gris-claro);
+}
+    .textbox-app:focus {
+        border-color: var(--violeta-principal) !important;
+        box-shadow: 0 0 8px rgba(93,14,192,0.4) !important;
+        outline: none !important;
+    }
