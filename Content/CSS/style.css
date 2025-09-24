@@ -42,7 +42,7 @@
         box-shadow: none !important;
     }
 
-    /*Hover para las card */
+ /*Hover para las card */
 .hover-scale:hover {
     transform: translateY(-5px) scale(1.02);
     transition: all 0.3s ease;
@@ -63,6 +63,8 @@
         object-position: center top;
     }
 }
+
+
 
 
 

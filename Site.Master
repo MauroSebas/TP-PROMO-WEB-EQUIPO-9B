@@ -1,7 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TPWebForms_equipo9B.Site" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -76,7 +75,7 @@
                     </div>
                     <div class="col-md-3">
                         <h6>Cobranza de créditos</h6>
-                        <p class="mb-0 text-muted">cobranzas@voucherapp.com</p>
+                        <p class="mb-0 text-muted">cobranzas@tiendanova.com</p>
                     </div>
                     <div class="col-md-3">
                         <h6>Venta telefónica</h6>
@@ -114,7 +113,7 @@
                         <ul class="list-unstyled text-muted">
                             <li>Protección de Usuarios Financieros</li>
                             <li>Promociones Bancarias</li>
-                            <li>Frávega Créditos</li>
+                            <li>Nova Créditos</li>
                             <li>Pagá Online</li>
                         </ul>
                     </div>
@@ -131,8 +130,6 @@
                 </div>
             </div>
         </footer>
-
-
     </form>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
