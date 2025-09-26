@@ -1,6 +1,4 @@
-﻿
-
-<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TPWebForms_equipo9B.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TPWebForms_equipo9B.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="Content/CSS/Vouncher.css" rel="stylesheet" />
@@ -23,12 +21,12 @@
 
             <div class="p-4">
 
-                <!-- UpdatePanel para validación sin recarga -->
+                <!-- UpdatePanel -->
                 <asp:UpdatePanel ID="UpdatePanelVoucher" runat="server">
                     <ContentTemplate>
 
                         <!-- Mensaje de feedback -->
-                        <asp:Label ID="lblMensaje" runat="server" CssClass="d-block text-center mb-3 fw-bold" Text=""></asp:Label>
+                        <asp:Label ID="lblMensaje" runat="server" CssClass="d-block text-center text-danger mb-3 fw-bold " Text=""></asp:Label>
 
                         <!-- Input voucher -->
                         <div class="justify-content-center mb-3">
