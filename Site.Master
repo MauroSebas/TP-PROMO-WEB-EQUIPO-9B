@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TPWebForms_equipo9B.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoucherApp</title>
+    <link href="Content/CSS/style.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body style="background-color: #f8f8f8">
+    <form id="form1" runat="server">
+        <div class="w-100">
+            <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/banner/desktop/BannerPrincipal.png" class="d-none d-md-block w-100" alt="Promo 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/banner/desktop/Banner2.jpg" class="d-none d-md-block w-100" alt="Promo 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/banner/desktop/Banner3.jpg" class="d-none d-md-block w-100" alt="Promo 3">
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators d-none d-md-flex">
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+            </div>
+            <!-- Banner Mobile -->
+            <div class="d-block d-md-none">
+                <img src="assets/img/banner/movile/Bannermovile1.png" class="w-100" alt="Banner Mobile">
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="pt-4" style="border-top: 1px solid #ccc; background-color: #ffffff;">
+            <div class="container">
+                <!-- Sección superior:-->
+                <div class="row text-center text-md-start mb-4">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <img src="assets/logo/logo.png" alt="VoucherApp Logo" style="max-width: 150px;">
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Atención al cliente</h6>
+                        <p class="mb-1">0800 112 0318</p>
+                        <p class="mb-1">0810 919 3128</p>
+                        <p class="mb-0 text-muted">
+                            LU-VI 09:00 - 18:00<br>
+                            SA 09:00 - 13:00
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Cobranza de créditos</h6>
+                        <p class="mb-0 text-muted">cobranzas@tiendanova.com</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Venta telefónica</h6>
+                        <p class="mb-1">0810 313 8100</p>
+                        <p class="mb-0 text-muted">
+                            LU-VI 08:00 - 20:00<br>
+                            SA-DO-Feriados 09:00 - 21:00
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="border-secondary">
+
+                <!-- Sección inferior -->
+                <div class="row text-center text-md-start mb-4">
+
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
+                        <h6>Recibí ofertas y promociones</h6>
+                        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control textbox-app mb-2" placeholder="Ingresá tu email"></asp:TextBox>
+                        <asp:Button ID="btnSubscribe" runat="server" CssClass="btn  input-mi-color w-100" Text="Suscribirme" />
+                    </div>
+
+
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <ul class="list-unstyled text-muted">
+                            <li>Comprar online</li>
+                            <li>Servicio técnico</li>
+                            <li>Información legal</li>
+                            <li>Botón de arrepentimiento</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <ul class="list-unstyled text-muted">
+                            <li>Protección de Usuarios Financieros</li>
+                            <li>Promociones Bancarias</li>
+                            <li>Nova Créditos</li>
+                            <li>Pagá Online</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-12 col-md-3 mb-3 mb-md-0">
+                        <ul class="list-unstyled text-muted">
+                            <li>Recomendados</li>
+                            <li>Smart TV</li>
+                            <li>Celulares</li>
+                            <li>Aire acondicionado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
