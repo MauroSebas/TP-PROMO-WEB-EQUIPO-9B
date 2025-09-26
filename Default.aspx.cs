@@ -23,7 +23,6 @@ namespace TPWebForms_equipo9B
             if (string.IsNullOrEmpty(voucherIngresado))
             {
                 lblMensaje.Text = "Por favor ingresa un código de voucher.";
-                lblMensaje.CssClass = "d-block text-center text-danger mb-3 fw-bold";
                 return;
             }
 
@@ -33,18 +32,16 @@ namespace TPWebForms_equipo9B
             if (voucher == null)
             {
                 lblMensaje.Text = "El voucher ingresado no existe.";
-                lblMensaje.CssClass = "d-block text-center text-danger mb-3 fw-bold";
                 return;
             }
 
             if (!voucher.SePuedeCanjear)
             {
                 lblMensaje.Text = "El voucher ya fue canjeado.";
-                lblMensaje.CssClass = "d-block text-center text-danger mb-3 fw-bold";
                 return;
             }
 
-            
+
             Session["Voucher"] = voucher;
 
             if (voucher.Cliente != null)
@@ -53,7 +50,7 @@ namespace TPWebForms_equipo9B
             }
             else
             {
-                Session["Cliente"] = new Cliente(); 
+                Session["Cliente"] = new Cliente();
             }
 
             Response.Redirect("~/SeleccionArticulo.aspx");
